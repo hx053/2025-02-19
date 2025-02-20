@@ -1,0 +1,270 @@
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT
+$ git init
+Initialized empty Git repository in EGIT.git
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git clone git@github.comhjhbysj.git
+Cloning into 'bysj'...
+The authenticity of host 'github.com (20.205.243.166)' can't be established.
+ECDSA key fingerprint is SHA256p2QAMXNIC1TJYWeIOttrVc98R1BUFWu3LiyKgUfQM.
+Are you sure you want to continue connecting (yesno[fingerprint]) y
+Please type 'yes', 'no' or the fingerprint yes
+Warning Permanently added 'github.com,20.205.243.166' (ECDSA) to the list of known hosts.
+git@github.com Permission denied (publickey).
+fatal Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git clone git@github.comhjh2025-02-19.git
+Cloning into '2025-02-19'...
+git@github.com Permission denied (publickey).
+fatal Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git clone git@github.comhx0532025-02-19.git
+Cloning into '2025-02-19'...
+git@github.com Permission denied (publickey).
+fatal Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git clone git@github.comhx0532025-02-19.git
+Cloning into '2025-02-19'...
+git@github.com Permission denied (publickey).
+fatal Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git config --global user.name hx053
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git config --global user.email hx053145@163.com
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=CProgram FilesGitmingw64sslcertsca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.httpsdev.azure.com.usehttppath=true
+user.name=hx053
+user.email=hx053145@163.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ ssh-keygen -t rsa -C hx053145@163.com
+Generating publicprivate rsa key pair.
+Enter file in which to save the key (cUsersjianheng.huang.sshid_rsa)
+Enter passphrase (empty for no passphrase)
+Enter same passphrase again
+Your identification has been saved in cUsersjianheng.huang.sshid_rsa
+Your public key has been saved in cUsersjianheng.huang.sshid_rsa.pub
+The key fingerprint is
+SHA256F6x14SBfnfRDKin6oW5LWTVn899xMKo9Lz+sUMZdQqU hx053145@163.com
+The key's randomart image is
++---[RSA 3072]----+
+        . . ooo+.
+         + +.o=o 
+         .==o=E.o
+        .oo+=oo=.
+       .So. = .o.
+        =..=    =
+       + .o o.  o
+      o.   ..oo  
+      .o.   .+o. 
++----[SHA256]-----+
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ ssh -T git@github.com
+Hi hx053! You've successfully authenticated, but GitHub does not provide shell access.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git init
+Reinitialized existing Git repository in EGIT.git
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git clone git@github.comhx0532025-02-19.git
+Cloning into '2025-02-19'...
+remote Enumerating objects 3, done.
+remote Counting objects 100% (33), done.
+remote Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects 100% (33), done.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git add .
+warning adding embedded git repository 2025-02-19
+hint You've added another git repository inside your current repository.
+hint Clones of the outer repository will not contain the contents of
+hint the embedded repository and will not know how to obtain it.
+hint If you meant to add a submodule, use
+hint
+hint   git submodule add url 2025-02-19
+hint
+hint If you added this path by mistake, you can remove it from the
+hint index with
+hint
+hint   git rm --cached 2025-02-19
+hint
+hint See git help submodule for more information.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git commit -m test-32-crc
+[master (root-commit) ef4a573] test-32-crc
+ 1 file changed, 1 insertion(+)
+ create mode 160000 2025-02-19
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git push -u origin master
+fatal 'origin' does not appear to be a git repository
+fatal Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git add.
+git 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git add .
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git commit -m test-32-crc
+On branch master
+Changes not staged for commit
+  (use git add file... to update what will be committed)
+  (use git restore file... to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified   2025-02-19 (untracked content)
+
+no changes added to commit (use git add andor git commit -a)
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ git push -u origin master
+fatal 'origin' does not appear to be a git repository
+fatal Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT (master)
+$ cd 2025-02-19
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git add .
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git commit -m test-32-crc
+[main c5c30fe] test-32-crc
+ 1 file changed, 365 insertions(+)
+ create mode 100644 aaa.c
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git push -u origin master
+error src refspec master does not match any
+error failed to push some refs to 'github.comhx0532025-02-19.git'
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git init
+Reinitialized existing Git repository in EGIT2025-02-19.git
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git branch
+ main
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git checkout master
+error pathspec 'master' did not match any file(s) known to git
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git push -u origin main
+Enumerating objects 4, done.
+Counting objects 100% (44), done.
+Delta compression using up to 6 threads
+Compressing objects 100% (33), done.
+Writing objects 100% (33), 7.49 KiB  3.75 MiBs, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.comhx0532025-02-19.git
+   aa623ee..c5c30fe  main - main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git status
+On branch main
+Your branch is up to date with 'originmain'.
+
+nothing to commit, working tree clean
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git log
+commit c5c30fe76dcda0e8a27dfc535216c80d0f0047a7 (HEAD - main, originmain, originHEAD)
+Author hx053 hx053145@163.com
+Date   Wed Feb 19 150039 2025 +0800
+
+    test-32-crc
+
+commit aa623ee7f7fbebe2279a388acf6414f268291968
+Author Jim 65892905+hx053@users.noreply.github.com
+Date   Wed Feb 19 140634 2025 +0800
+
+    Initial commit
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git add .
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git commit -m test-32-crc
+[main e0069b4] test-32-crc
+ 1 file changed, 23 insertions(+), 23 deletions(-)
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git push -u origin main
+Enumerating objects 5, done.
+Counting objects 100% (55), done.
+Delta compression using up to 6 threads
+Compressing objects 100% (33), done.
+Writing objects 100% (33), 509 bytes  509.00 KiBs, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote Resolving deltas 100% (11), completed with 1 local object.
+To github.comhx0532025-02-19.git
+   c5c30fe..e0069b4  main - main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$ git clone git@github.comFreeRTOSFreeRTOS-Kernel.git
+Cloning into 'FreeRTOS-Kernel'...
+remote Enumerating objects 176277, done.
+remote Counting objects 100% (79637963), done.
+remote Compressing objects 100% (519519), done.
+fatal the remote end hung up unexpectedly.15 MiB  48.00 KiBs
+fatal early EOF
+fatal index-pack failed
+
+
+jianheng.huang@YJ-20220426ZLCG MINGW64 eGIT2025-02-19 (main)
+$
